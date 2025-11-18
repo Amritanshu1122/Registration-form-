@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h2>Workshop Registration</h2>
+<h2>Simple Registration Form</h2>
 <form action="/register" method="POST">
 Name: <input name="name" required><br>
 Email: <input name="email" type="email" required><br>
 Phone: <input name="phone" required><br>
+Webinar <select id = "event" required><br>
+                <option value = " ">---Select---</option>
+                <option value = "workshop">Web development</option>
+                <option value = "Seminar">Gen AI</option>
+            </select><br>
 <input type="submit" value="Register">
 </form>
 </body>
